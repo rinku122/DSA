@@ -1,0 +1,45 @@
+BigONotation : To analyze the perfomance of an alogorithm , weuse BigONotation
+BigONotation is way of counting that allows us to talk formally about how the runtime of an alogorithm grows as the input grows
+
+Time complexity :
+Airthmatic oprations are constant
+Variable assignments are constants
+-Accessing elements in an array (by index) or in objects(by key) is constant
+-In the loop the complexity is the length of the loop  times the complexity of whatever happens inside the loop
+O(1)> O(logn) > O(n) > O(nlogn) > O(n**2) [O(1) best]
+
+
+Space complexity : 
+Most primitives (booleans, numbers, undefined, null) are constant space.
+Strings require O(n) space (where n is the Strings length)
+Refrence types are gernally O(n) where n is the length(for arrays) or the number of keys (for objects)
+
+
+BigONotation objects
+Insertion, Removal, Access are having O(1)
+Searching O(n)
+ex  - let instrucot ={firstName :"Kelly", isInstructor : true,age : 25}
+     For accssing firstName its const O(1)
+    For searching 25 in the keys its a O(n)
+objects.keys - O(n)
+objects.values - O(n)
+objects.entries - O(n)
+objects.hasOwnproperty - O(1)  
+
+
+BigONotation Arrays
+Insertion : Insertion on last is O(1), but in start it is O(n)
+Removal : Removal on last is O(1), but in start it is O(n)
+Searching : O(n)
+Access :   O(1)
+push , pop - O(1)
+shift, unshift, concat, slice, splice, sort, forEach,map,filter, reduce, etc - O(n)
+sort O(nlogn)
+
+
+
+concat, spread and slice will make copis of arrays. splice mutatw the old string 
+indexof, findOne, includes etc etc are using linear that is they are going for checking every individual item in array i.e is O(N)
+Binanry search is a very efficient but only usefull in ordered data. O(logN)...If not ordered use linear
+Bubble sort has O(N**2) swaps upto length of array
+Selection sort has O(N**2) swaps at the end of array
